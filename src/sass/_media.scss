@@ -1,0 +1,206 @@
+@media(max-width: 1200px) {
+    .menu {
+        &_item {
+            padding-right: 20px;
+        }
+        &_link {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 50px;
+        }
+    }
+    .worcked {
+        &_descr {
+            width: 300px;
+        }
+    }
+    .mobile {
+        &_item {
+            width: 300px;
+        }
+    }
+    .footer {
+        &_wrapper {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .menu {
+        &_item {
+            padding-right: 8px;
+        }
+        &_link {
+            font-size: 10px;
+        }
+    }
+    .subheader {
+        &_logo {
+            img {
+                width: 100%;
+            }
+        }
+        &_official {
+            font-size: 12px;
+        }
+        &_phone {
+            font-size: 21px;
+        }
+        &_btn {
+            width: 100%;
+            height: 44px;
+            margin-top: 21px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 40px;
+        }
+    }
+    &_subheader {
+        font-size: 30px;
+    }
+    .worcked {
+        &_wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_bgk {
+            margin: 0 0 20px 0;
+        }
+    }
+    .mobile {
+        &_item {
+            width: 225px;
+            &_subtitle {
+                font-size: 20px;
+            }
+        }
+    }
+    .map {
+        max-height: 300px;
+        &_link {
+            margin-top: 400px;
+        }
+    }
+    .footer {
+        &_shop {
+            flex-direction: column;
+        }
+        &_social {
+            display: none;
+        }
+    }
+}   
+
+@media(max-width: 767px) {
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, .8);
+        transform: 0.4s all;
+        z-index: 10;
+        &_active {
+            left: 0;
+        }
+        &_item {
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+        }
+        &_link {
+            font-size: 20px;
+        }
+    }
+    .humburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            transition: .5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+    }
+    .subheader {
+        &_phone {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+        &_btn {
+            width: 200px;
+            height: 40px;
+            font-size: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            line-height: 22px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    .mobile {
+        &_item {
+            width: 250px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .subheader {
+        &_descr {
+            display: none;
+        }
+    }
+}

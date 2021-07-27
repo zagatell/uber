@@ -1,0 +1,14 @@
+@mixin btn_hover {	
+	&:hover {
+		background-color: rgb(80, 111, 146);
+	}	
+}
+
+* {
+		font-family: 'Roboto-ub' sans-serif;
+	}
+	
+@import 'variable';
+@import 'mixins';
+@import 'general';
+@import 'media';
